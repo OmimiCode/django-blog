@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+<h1>Edit Your Post : {{ post.title.capitalize }}</h1>
+{% block content %}
+    <form action="" method="post">
+    {% csrf_token %}
+     {{ form.as_p }}
+    <input class="save" type="submit" value="save"/>
+    </form>
+
+
+{% endblock content %}
