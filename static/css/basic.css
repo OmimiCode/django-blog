@@ -14,8 +14,40 @@ a{
 h2 :hover{
     font-size: 32px;
     animation: ease-in-out;
+    color: white;
 }
 
 p{
     font-style: italic;
+}
+
+
+.nav-bar{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.add_new{
+    color: purple;
+}
+
+.save{
+    background: green;
+    color: white;
+    border: none;
+    border-radius:10px ;
+}
+
+.delete_button{
+    background: red;
+    color: white;
+     border: none;
+    border-radius:10px ;
+}
+.edit_button{
+    background: deepskyblue;
+    color: black;
+     border: none;
+    border-radius:10px;
 }

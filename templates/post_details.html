@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
-{% block post_details %}
+{% block content %}
     <div>
         <h1>{{ post.title }}</h1>
         <p>{{ post.body }}</p>
     </div>
 
-{% endblock post_details %}
+    <button class="edit_button" ><a href="{% url 'edit_post' post.pk %}">+edit post</a></button>
+    <button class="delete_button"><a href="{% url 'delete_post' post.pk %}">-delete post</a></button>
+
+
+{% endblock%}

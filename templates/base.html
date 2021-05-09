@@ -8,8 +8,14 @@
 
 </head>
 <body>
+<h1>Welcome to OMIMI Blog</h1>
+<header class="nav-bar">
 
     <h1><a  href="{% url 'home' %}"> Blog </a></h1>
+    <h1 class="add_new"><a  href="{% url 'new_post' %}"> + New Post </a></h1>
+</header>
+
+<hr>
     <div>
     {% block content %}
     {% endblock content %}
